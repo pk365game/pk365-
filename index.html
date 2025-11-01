@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pk365game.pk/">
+    <title>PK365: Earn Real Money Playing Games in Pakistan</title>
+    <meta name="description" content="Love gaming? PK365 lets you play and earn real money in Pakistan. Learn how to start your winning journey today. Safe and easy!">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        /* Typography */
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.3;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a00e0;
+            margin-bottom: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 25px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #4a00e0;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, #4a00e0, #8e2de2);
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00c9ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #00b4e6;
+            transform: translateY(-2px);
+        }
+        
+        /* Content Sections */
+        .content-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        /* Steps */
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .step {
+            flex: 1 1 200px;
+            text-align: center;
+            padding: 25px 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #4a00e0;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        
+        /* Games */
+        .games {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .game-card {
+            flex: 1 1 250px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .game-img {
+            height: 150px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+        
+        .game-content {
+            padding: 20px;
+        }
+        
+        /* Stats */
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .stat-item {
+            flex: 1 1 150px;
+            padding: 20px 10px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4a00e0;
+            margin-bottom: 5px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column {
+            flex: 1 1 200px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #00c9ff;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                        <img src="https://pk365game.pk/wp-content/uploads/2025/06/PK365-Game-Logo.webp" alt="PK365 Game Logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#steps">How to Start</a></li>
+                    <li><a href="#safety">Safety</a></li>
+                </ul>
+                <div class="mobile-menu">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>PK365: Earn Real Money Playing Games in Pakistan</h1>
+            <p>Love gaming? PK365 lets you play and earn real money in Pakistan. Learn how to start your winning journey today. Safe and easy!</p>
+            <a href="#steps" class="btn">Start Earning Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="content-card">
+                <h2>What is PK365 and How Does It Work?</h2>
+                <p>Do you love playing games on your phone? What if you could earn real money from it? For many people in Pakistan, this is now a reality. <a href="https://pk365game.pk/">PK365</a> is a platform that lets you do just that. It turns your gaming skills into a source of income. This article is a simple guide on how you can use <strong>PK365</strong> to earn real money. We will talk about how it works, the types of games you can play, and important tips for success. If you are looking for a fun way to make money, you are in the right place.</p>
+                
+                <p><strong>PK365</strong> is an online platform where you can play many different games. The main goal is to win and earn cash rewards. It is not like regular gaming apps where you just get points. On <strong>PK365 Game</strong>, your wins can be converted into real money that you can use.</p>
+                
+                <p>The process is simple. First, you create an account on the <strong>PK365</strong> app or website. Then, you can look at the many games available. You will find puzzle games, card games, and quick action games. You choose a game you like and are good at. You play against other players or the system. When you win, you earn money. You can then withdraw this money to your bank account or mobile wallet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="steps">
+        <div class="container">
+            <h2>Getting Started with PK365</h2>
+            <p>Starting your journey on <strong>PK365</strong> is easy. Just follow these steps:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download and Register</h3>
+                    <p>Find the <strong>PK365</strong> app in your phone's app store or go to their website.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Explore the Games</h3>
+                    <p>Look at all the different games. Start with games you already know and enjoy.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Understand the Rules</h3>
+                    <p>Before you play any game for money, learn its rules and how to win.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Start Small</h3>
+                    <p>Begin with small entry fees. As you get better, try for bigger rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games">
+        <div class="container">
+            <h2>Popular Games on PK365</h2>
+            <p><strong>PK365</strong> offers a wide variety of games. Here are some popular types:</p>
+            
+            <div class="games">
+                <div class="game-card">
+                    <div class="game-img">🧩</div>
+                    <div class="game-content">
+                        <h3>Puzzle Games</h3>
+                        <p>Test your brain with puzzle and strategy games that require thinking.</p>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-img">🃏</div>
+                    <div class="game-content">
+                        <h3>Card Games</h3>
+                        <p>Classic card games where your skill can lead to big wins.</p>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-img">🎮</div>
+                    <div class="game-content">
+                        <h3>Action Games</h3>
+                        <p>Fast-paced games that test your reflexes and timing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section>
+        <div class="container">
+            <h2>PK365 in Numbers</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">50M+</div>
+                    <p>Gamers in Pakistan</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <p>Games Available</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <p>Support</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">Fast</div>
+                    <p>Withdrawals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section id="safety">
+        <div class="container">
+            <div class="content-card">
+                <h2>Is PK365 Safe and Legal?</h2>
+                <p>This is a common question. <strong>PK365</strong> operates as a skill-based gaming platform. In many places, games that require skill are seen as different from games based only on luck.</p>
+                <p>It is always important to play responsibly. <strong>PK365</strong> provides tools to help you manage your time and spending on the app. Always make sure you are of legal age to participate in such platforms. Gaming should be a fun activity, not a problem. If you feel it is affecting your life, take a break.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: #f0f0f0;">
+        <div class="container" style="text-align: center;">
+            <h2>Start Your Earning Journey Today</h2>
+            <p><strong>PK365</strong> offers a fun way to use your gaming skills and earn real money in Pakistan. Remember to start small, practice often, and always play smart.</p>
+            <a href="#" class="btn">Visit PK365 Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PK365</h3>
+                    <p>The leading gaming platform in Pakistan where you can play games and earn real money.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#steps">How to Start</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 PK365 Game. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
